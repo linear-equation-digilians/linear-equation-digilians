@@ -1,11 +1,11 @@
-#  Linear Equation System Manager (C++)
+# Linear Equation System Manager (C++)
 
 A console-based C++ application for managing and solving systems of
 linear equations using Object-Oriented Programming principles.
 
 ------------------------------------------------------------------------
 
-##  Overview
+## Overview
 
 This project implements a **Linear Equation System Manager** that allows
 users to:
@@ -26,14 +26,14 @@ The system is built using clean OOP design and modular architecture.
 
 ##  Project Architecture
 
-### 1️⃣ Equation Class
+### 1️ Equation Class
 
 Responsible for: - Storing coefficients - Storing constant term -
 Performing equation operations (Addition, Subtraction, Scalar
 multiplication) - Converting equation to formatted string - Debug
 printing
 
-### 2️⃣ EquationManager Class
+### 2️  EquationManager Class
 
 Responsible for: - Reading equations from user - Parsing equation
 strings - Managing global variable list - Building coefficient matrix -
@@ -42,7 +42,7 @@ substitution - Solving system - Executing user commands
 
 ------------------------------------------------------------------------
 
-## 📂 Project Structure
+##  Project Structure
 
 Linear-Equation-System/ │ ├── ConsoleApplication1.cpp ├── Equation.h ├──
 Equation.cpp ├── EquationManager.h ├── EquationManager.cpp └── README.md
@@ -119,7 +119,8 @@ g++ ConsoleApplication1.cpp Equation.cpp EquationManager.cpp -o solver
 
 ------------------------------------------------------------------------
 
-## Academic Purpose
+##  Academic Purpose
 
-This project was developed as part of the **Fundamentals of Programming** course at **Digilians**.  
-The main objective of this project is to apply Object-Oriented Programming (OOP) principles and implement matrix-based methods to solve systems of linear equations programmatically.
+This project was developed as part of a university assignment to
+demonstrate OOP principles, matrix operations, and solving linear
+systems programmatically.
