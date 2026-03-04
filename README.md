@@ -1,11 +1,11 @@
-# 📐 Linear Equation System Manager (C++)
+#  Linear Equation System Manager (C++)
 
 A console-based C++ application for managing and solving systems of
 linear equations using Object-Oriented Programming principles.
 
 ------------------------------------------------------------------------
 
-## 📌 Overview
+##  Overview
 
 This project implements a **Linear Equation System Manager** that allows
 users to:
@@ -24,7 +24,7 @@ The system is built using clean OOP design and modular architecture.
 
 ------------------------------------------------------------------------
 
-## 🏗️ Project Architecture
+##  Project Architecture
 
 ### 1️⃣ Equation Class
 
@@ -49,7 +49,7 @@ Equation.cpp ├── EquationManager.h ├── EquationManager.cpp └──
 
 ------------------------------------------------------------------------
 
-## 🧮 Features
+##  Features
 
 -   Dynamic variable detection\
 -   Equation parsing from text input\
@@ -62,7 +62,7 @@ Equation.cpp ├── EquationManager.h ├── EquationManager.cpp └──
 
 ------------------------------------------------------------------------
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 -   C++
 -   Standard Template Library (STL)
@@ -71,7 +71,7 @@ Equation.cpp ├── EquationManager.h ├── EquationManager.cpp └──
 
 ------------------------------------------------------------------------
 
-## ▶️ How to Run
+##  How to Run
 
 ### Using Visual Studio
 
@@ -86,7 +86,7 @@ g++ ConsoleApplication1.cpp Equation.cpp EquationManager.cpp -o solver
 
 ------------------------------------------------------------------------
 
-## 📊 Mathematical Techniques Used
+##  Mathematical Techniques Used
 
 -   Matrix Representation of Linear Systems
 -   Determinant Calculation (Recursive Method)
@@ -95,14 +95,14 @@ g++ ConsoleApplication1.cpp Equation.cpp EquationManager.cpp -o solver
 
 ------------------------------------------------------------------------
 
-## ⚠️ Limitations
+##  Limitations
 
 -   Floating-point precision limitations
 -   Determinant recursion may be inefficient for very large matrices
 
 ------------------------------------------------------------------------
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 -   Gaussian Elimination implementation
 -   Performance optimization
@@ -111,7 +111,7 @@ g++ ConsoleApplication1.cpp Equation.cpp EquationManager.cpp -o solver
 
 ------------------------------------------------------------------------
 
-## 👥 Project Team
+##  Project Team
 
 -   Sama Yasser Gemeay -- 12265
 -   Hager Sherif Ibrahim -- 12266
@@ -119,8 +119,7 @@ g++ ConsoleApplication1.cpp Equation.cpp EquationManager.cpp -o solver
 
 ------------------------------------------------------------------------
 
-## 📜 Academic Purpose
+## Academic Purpose
 
-This project was developed as part of a university assignment to
-demonstrate OOP principles, matrix operations, and solving linear
-systems programmatically.
+This project was developed as part of the **Fundamentals of Programming** course at **Digilians**.  
+The main objective of this project is to apply Object-Oriented Programming (OOP) principles and implement matrix-based methods to solve systems of linear equations programmatically.
