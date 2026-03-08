@@ -26,14 +26,14 @@ The system is built using clean OOP design and modular architecture.
 
 ##  Project Architecture
 
-### 1️⃣ Equation Class
+### 1️ Equation Class
 
 Responsible for: - Storing coefficients - Storing constant term -
 Performing equation operations (Addition, Subtraction, Scalar
 multiplication) - Converting equation to formatted string - Debug
 printing
 
-### 2️⃣ EquationManager Class
+### 2️ EquationManager Class
 
 Responsible for: - Reading equations from user - Parsing equation
 strings - Managing global variable list - Building coefficient matrix -
@@ -42,7 +42,7 @@ substitution - Solving system - Executing user commands
 
 ------------------------------------------------------------------------
 
-📂 Project Structure
+ Project Structure
 Linear-Equation-System
 │
 ├── ConsoleApplication1.cpp
@@ -82,7 +82,7 @@ Viewing all stored equations
 
 ------------------------------------------------------------------------
 
-▶️ How to Run
+How to Run
 
 Clone the repository
 
