@@ -1,11 +1,11 @@
-# Linear Equation System Manager (C++)
+#  Linear Equation System Manager (C++)
 
-A console-based **C++ application** for managing and solving systems of
-linear equations using **Object-Oriented Programming (OOP)** principles.
+A console-based C++ application for managing and solving systems of
+linear equations using Object-Oriented Programming principles.
 
 ------------------------------------------------------------------------
 
-# Overview
+##  Overview
 
 This project implements a **Linear Equation System Manager** that allows
 users to:
@@ -20,190 +20,334 @@ users to:
 -   Perform substitution
 -   Add and subtract equations
 
-The system is built using **clean OOP design and modular architecture**.
+The system is built using clean OOP design and modular architecture.
 
 ------------------------------------------------------------------------
 
-# Project Architecture
+##  Project Architecture
 
-## Equation Class
+### 1️⃣ Equation Class
 
-Responsible for:
+Responsible for: - Storing coefficients - Storing constant term -
+Performing equation operations (Addition, Subtraction, Scalar
+multiplication) - Converting equation to formatted string - Debug
+printing
 
--   Storing coefficients
--   Storing the constant term
--   Performing equation operations
--   Addition, subtraction, and scalar multiplication
--   Converting equation to formatted string
--   Debug printing
+### 2️⃣ EquationManager Class
 
-------------------------------------------------------------------------
-
-## EquationManager Class
-
-Responsible for:
-
--   Reading equations from user input
--   Parsing equation strings
--   Managing the global variable list
--   Building the coefficient matrix
--   Computing determinant
--   Generating Cramer matrices
--   Performing substitution
--   Solving the system
--   Executing user commands
+Responsible for: - Reading equations from user - Parsing equation
+strings - Managing global variable list - Building coefficient matrix -
+Computing determinant - Generating Cramer matrices - Performing
+substitution - Solving system - Executing user commands
 
 ------------------------------------------------------------------------
 
-# Project Structure
-
-Linear-Equation-System │ ├── ConsoleApplication1.cpp ├── Equation.h ├──
-Equation.cpp ├── EquationManager.h ├── EquationManager.cpp ├──
-Linear_Equation_System_Documentation.pdf └── README.md
+📂 Project Structure
+Linear-Equation-System
+│
+├── ConsoleApplication1.cpp
+│   └── Main entry point of the application
+│
+├── Equation.h
+│   └── Declaration of the Equation class
+│
+├── Equation.cpp
+│   └── Implementation of the Equation class
+│
+├── EquationManager.h
+│   └── Declaration of the EquationManager class
+│
+├── EquationManager.cpp
+│   └── Implementation of equation management logic
+│
+├── Linear_Equation_System_Documentation.pdf
+│   └── Project documentation
+│
+└── README.md
+    └── Project description and instructions
 
 ------------------------------------------------------------------------
-
-# How It Works
+⚙️ How It Works
 
 The program allows users to create and store linear equations.
+Each equation is represented using an Equation class, while an EquationManager class manages a collection of equations and performs operations between them.
 
-Each equation is represented using an **Equation class**, while an
-**EquationManager class** manages a collection of equations and performs
-operations between them.
+Example operations supported:
 
-Supported operations:
+Adding two equations
 
--   Adding equations
--   Subtracting equations
--   Viewing stored equations
--   Solving linear systems
+Subtracting two equations
+
+Viewing all stored equations
 
 ------------------------------------------------------------------------
 
-# Test Case
+▶️ How to Run
 
-Input:
+Clone the repository
 
-3 2x1 + 3x2 + 4x3 = 16 1x1 + 2x2 + 1x3 = 8 3x1 + 1x2 + 2x3 = 13
+git clone https://github.com/rabea-shaban/Linear-Equation-System.git
+
+Open the project in Visual Studio or any C++ IDE.
+
+Build and run the project.
 
 ------------------------------------------------------------------------
+Test Case
+Input Equations
+3
+2x1 + 3x2 + 4x3 = 16
+1x1 + 2x2 + 1x3 = 8
+3x1 + 1x2 + 2x3 = 13
 
-# Level 1 Operations
+The first number represents the number of equations and variables.
+
+Level 1 Operations
+Print Number of Variables
+
+Command
 
 num_vars
 
 Output
 
 3
+Print Equation
+
+Command
 
 equation 2
 
 Output
 
 1x1 + 2x2 + 1x3 = 8
+Print Column of Variable
+
+Command
 
 column x2
 
 Output
 
-3 2 1
+3
+2
+1
+Level 2 Operations
+Add Equations
 
-------------------------------------------------------------------------
-
-# Level 2 Operations
+Command
 
 add 1 3
 
 Result
 
-(2x1 + 3x2 + 4x3 = 16) + (3x1 + 1x2 + 2x3 = 13)
+(2x1 + 3x2 + 4x3 = 16)
++
+(3x1 + 1x2 + 2x3 = 13)
 
 = 5x1 + 4x2 + 6x3 = 29
+Subtract Equations
+
+Command
 
 subtract 1 3
 
 Result
 
-## (2x1 + 3x2 + 4x3 = 16)
-
+(2x1 + 3x2 + 4x3 = 16)
+-
 (3x1 + 1x2 + 2x3 = 13)
 
 = -1x1 + 2x2 + 2x3 = 3
+Substitute Variable
 
-------------------------------------------------------------------------
+Command
 
-# Level 3 Operations
+substitute x2 1 3
+
+Meaning
+
+Substitute variable x2 in equation 1 using equation 3 and remove it from equation 1.
+
+Level 3 Operations
+Print Coefficient Matrix
+
+Command
 
 D
 
 Output
 
-| 2 3 4 \|
-| 1 2 1 \|
-| 3 1 2 \|
+| 2  3  4 |
+| 1  2  1 |
+| 3  1  2 |
+Cramer's Matrix for x1
+
+Command
+
+D x1
+
+Replace column x1 with constants.
+
+Determinant Value
+
+Command
 
 D_value
 
 Output
 
 Determinant = -9
+Solve the System
+
+Command
 
 solve
 
 Output
 
-x1 = 2 x2 = 1 x3 = 2
+x1 = 2
+x2 = 1
+x3 = 2
+No Solution Case
+
+If the system has no valid solution the program prints:
+
+No Solution
+
+------------------------------------------------------------------------
+# How to Run
+
+Follow these steps to run the project on your machine.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/linear-equation-digilians/linear-equation-digilians.git
+```
+
+### 2. Open the Project
+
+Open the project using **Visual Studio** or any C++ IDE.
+
+### 3. Build the Project
+
+Compile the project using your IDE or a C++ compiler.
+
+Example using g++:
+
+```bash
+g++ ConsoleApplication1.cpp Equation.cpp EquationManager.cpp -o linear_solver
+```
+
+### 4. Run the Program
+
+```bash
+./linear_solver
+```
+
+The program will start and you can enter the equations and commands.
+
+---
+
+# Repository
+
+Project Repository:
+
+```bash
+https://github.com/linear-equation-digilians/linear-equation-digilians
+```
+
+---
+
+# Contributors
+
+Digilians Team
+
+* Rabea Shaban
+* Team Members
+
+---
+
+# License
+
+This project is developed for educational purposes.
 
 ------------------------------------------------------------------------
 
-# Features
 
--   Dynamic variable detection
--   Equation parsing from text input
--   Matrix construction
--   Determinant calculation
--   Cramer's Rule implementation
--   Equation addition and subtraction
--   Variable substitution
+
+##  Features
+
+-   Dynamic variable detection\
+-   Equation parsing from text input\
+-   Matrix construction\
+-   Determinant calculation\
+-   Cramer's Rule implementation\
+-   Equation addition and subtraction\
+-   Variable substitution\
 -   Formatted equation printing
 
 ------------------------------------------------------------------------
 
-# Technologies Used
+##  Technologies Used
 
 -   C++
 -   Standard Template Library (STL)
--   Object-Oriented Programming (OOP)
+-   Object-Oriented Programming
 -   Matrix mathematics
 
 ------------------------------------------------------------------------
 
-# How to Run
+##  How to Run
 
-Compile:
+### Using Visual Studio
+
+1.  Open the solution file.
+2.  Build the solution.
+3.  Run the project.
+
+### Using g++
 
 g++ ConsoleApplication1.cpp Equation.cpp EquationManager.cpp -o solver
-
-Run:
-
 ./solver
 
 ------------------------------------------------------------------------
 
-# Repository
+##  Mathematical Techniques Used
 
-https://github.com/linear-equation-digilians/linear-equation-digilians
-
-------------------------------------------------------------------------
-
-# Contributors
-
--   Rabea Shaban
--   Team Members
+-   Matrix Representation of Linear Systems
+-   Determinant Calculation (Recursive Method)
+-   Cramer's Rule
+-   Row-based Equation Operations
 
 ------------------------------------------------------------------------
 
-# Academic Purpose
+##  Limitations
 
-This project was developed as part of the **Fundamentals of
-Programming** course.
+-   Floating-point precision limitations
+-   Determinant recursion may be inefficient for very large matrices
+
+------------------------------------------------------------------------
+
+##  Future Improvements
+
+-   Gaussian Elimination implementation
+-   Performance optimization
+-   GUI version
+-   Step-by-step solving visualization
+
+------------------------------------------------------------------------
+
+##  Project Team
+
+-   Sama Yasser Gemeay -- 12265
+-   Hager Sherif Ibrahim -- 12266
+-   Rabea Shaban Ibrahim -- 11219
+
+------------------------------------------------------------------------
+
+## Academic Purpose
+
+This project was developed as part of the **Fundamentals of Programming** course at **Digilians**.  
+The main objective of this project is to apply Object-Oriented Programming (OOP) principles and implement matrix-based methods to solve systems of linear equations programmatically.
