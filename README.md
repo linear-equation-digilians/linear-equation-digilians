@@ -95,10 +95,13 @@ Build and run the project.
 ------------------------------------------------------------------------
 Test Case
 Input Equations
-3
-2x1 + 3x2 + 4x3 = 16
-1x1 + 2x2 + 1x3 = 8
-3x1 + 1x2 + 2x3 = 13
+<p>3</p>
+<p>2x1 + 3x2 + 4x3 = 16</p>
+<p>3x1 + 1x2 + 2x3 = 13</p>
+<p>1x1 + 2x2 + 1x3 = 8</p>
+
+
+
 
 The first number represents the number of equations and variables.
 
@@ -260,12 +263,6 @@ https://github.com/linear-equation-digilians/linear-equation-digilians
 
 ---
 
-# Contributors
-
-Digilians Team
-
-* Rabea Shaban
-* Team Members
 
 ---
 
